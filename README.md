@@ -34,27 +34,27 @@ END
  THEN reorder 
  MANAGER MODULE
  END 
-  ENDIF 
-END 
+  ENDIF END 
 
 END MAKE UP ARTIST MODULE
 
 ELSE option selected is 2. MANAGER                             
 
-MANAGERS MODULE
-THEN                                            
-          DISPLAY ‘ ‘WELCOME MANGERS’ SIDE’ ‘                                       
-FUNCTION addNewStock (READ productCode)                                                     
-IF             quantity is less than 30                                                   
+    THEN
+        MANAGER MODULE
+        DISPLAY ‘ ‘WELCOME MANGERS’ SIDE’ ‘                                       
+
+    -FUNCTION addNewStock (READ productCode)                                                     
+     IF quantity is less than 30                                                   
     THEN                                                               
      DISPLAY’Stock is low’ ‘                                                             
                  READ productCode                                                            
                  READ quantity                                                             
                  READ unitPrice                        
-ELSE                                            
-      THEN                                                          
+     ELSE                                            
+          THEN                                                          
                  WRITE ‘ ‘  stock level is fine ‘ ‘                          
- END IF
+    END IF
 
 ELSE option selected is 3. CUSTOMER 
  
