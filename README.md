@@ -23,17 +23,24 @@ END
 -FUNCTION applyProducts(cosmetic) 
           READ productCode READ quantity
           CALCULATE total=productCode*quantity DISPAY totalPrice END 
+
 -FUNCTION ProductRecord(READ productCode)
-          DISPLAY ProductCode DISPLAY ProductName 
-          DISPLAY quantity DISPLAY unitPrice
-          DISPLAY typeofcosmetic END 
+                   DISPLAY ProductCode DISPLAY ProductName 
+                   DISPLAY quantity DISPLAY unitPrice
+                   DISPLAY typeofcosmetic END 
+
 -FUNCTION reorder (READ productCode) 
- IF          quantity less than 30 THEN reorder MANAGER MODULE END  ENDIF 
+ IF quantity less than 30
+ THEN reorder 
+ MANAGER MODULE
+ END 
+  ENDIF 
 END 
 
 END MAKE UP ARTIST MODULE
 
 ELSE option selected is 2. MANAGER                             
+
 MANAGERS MODULE
 THEN                                            
           DISPLAY ‘ ‘WELCOME MANGERS’ SIDE’ ‘                                       
@@ -48,8 +55,11 @@ ELSE
       THEN                                                          
                  WRITE ‘ ‘  stock level is fine ‘ ‘                          
  END IF
- ELSE option selected is 3. CUSTOMER 
+
+ELSE option selected is 3. CUSTOMER 
+ 
  CUSTOMER’ MODULE DISPLAY “WELCOME TO CUSTOMER ‘ SIDE” 
  
  ...........Then create functions for customer here
+ 
  ...........You can also add some MODULES like employees and so on
